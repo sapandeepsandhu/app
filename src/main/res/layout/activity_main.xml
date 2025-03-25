@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/selectFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select XLSX File" />
+
+    <TextView
+        android:id="@+id/filePathText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectFileButton"
+        android:layout_marginTop="8dp"
+        android:text="No file selected"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/extractFontsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filePathText"
+        android:layout_marginTop="16dp"
+        android:text="Extract Fonts" />
+
+    <TextView
+        android:id="@+id/outputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extractFontsButton"
+        android:layout_marginTop="16dp"
+        android:text="Output will be shown here"
+        android:textSize="14sp" />
+</RelativeLayout>
